@@ -1,4 +1,7 @@
 class PerfisController < ApplicationController
+
+	before_filter :authenticate_admin!
+
   # GET /perfis
   # GET /perfis.xml
   def index

@@ -2,8 +2,7 @@
 
 <table>
   <tr>
-    <th>Evento</th>
-    <th>Area</th>
+    <th>Categoria</th>
     <th>User</th>
     <th>Nome</th>
     <th></th>
@@ -13,8 +12,7 @@
 
 <% @perfis.each do |perfil| %>
   <tr>
-    <td><%= perfil.evento_id %></td>
-    <td><%= perfil.area_id %></td>
+    <td><%= perfil.categoria_id %></td>
     <td><%= perfil.user %></td>
     <td><%= perfil.nome %></td>
     <td><%= link_to 'Show', perfil %></td>

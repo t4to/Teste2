@@ -1,4 +1,7 @@
 class EventosController < ApplicationController
+	
+	before_filter :authenticate_admin!
+	
   # GET /eventos
   # GET /eventos.xml
   def index

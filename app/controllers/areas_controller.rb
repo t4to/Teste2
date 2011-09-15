@@ -1,4 +1,7 @@
 class AreasController < ApplicationController
+
+	before_filter :authenticate_admin!
+
   # GET /areas
   # GET /areas.xml
   def index
