@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Evento:</b>
+  <%= @perfil.evento_id %>
+</p>
+
+<p>
+  <b>Area:</b>
+  <%= @perfil.area_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @perfil.user %>
+</p>
+
+<p>
+  <b>Nome:</b>
+  <%= @perfil.nome %>
+</p>
+
+
+<%= link_to 'Edit', edit_perfil_path(@perfil) %> |
+<%= link_to 'Back', perfis_path %>

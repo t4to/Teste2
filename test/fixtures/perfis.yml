@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  evento_id: 1
+  area_id: 1
+  user: MyString
+  nome: MyString
+
+two:
+  evento_id: 1
+  area_id: 1
+  user: MyString
+  nome: MyString

@@ -14,7 +14,7 @@ ActiveSupport::Inflector.inflections do |inflect|
 
   inflect.plural(/$/,  's')
   inflect.plural(/(s)$/i,  '\1')
-  inflect.plural(/^(paí)s$/i, '\1ses')
+  inflect.plural(/^(paÃ­)s$/i, '\1ses')
   inflect.plural(/(z|r)$/i, '\1es')
   inflect.plural(/al$/i,  'ais')
   inflect.plural(/el$/i,  'eis')
@@ -22,19 +22,19 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.plural(/ul$/i,  'uis')
   inflect.plural(/([^aeou])il$/i,  '\1is')
   inflect.plural(/m$/i,   'ns')
-  inflect.plural(/^(japon|escoc|ingl|dinamarqu|fregu|portugu)ês$/i,  '\1eses')
-  inflect.plural(/^(|g)ás$/i,  '\1ases')
-  inflect.plural(/ão$/i,  'ões')
-  inflect.plural(/^(irm|m)ão$/i,  '\1ãos')
-  inflect.plural(/^(alem|c|p)ão$/i,  '\1ães')
+  inflect.plural(/^(japon|escoc|ingl|dinamarqu|fregu|portugu)Ãªs$/i,  '\1eses')
+  inflect.plural(/^(|g)Ã¡s$/i,  '\1ases')
+  inflect.plural(/Ã£o$/i,  'Ãµes')
+  inflect.plural(/^(irm|m)Ã£o$/i,  '\1Ã£os')
+  inflect.plural(/^(alem|c|p)Ã£o$/i,  '\1Ã£es')
 
   # Sem acentos...
   inflect.plural(/ao$/i,  'oes')
   inflect.plural(/^(irm|m)ao$/i,  '\1aos')
   inflect.plural(/^(alem|c|p)ao$/i,  '\1aes')
 
-  inflect.singular(/([^ê])s$/i, '\1')
-  inflect.singular(/^(á|gá|paí)s$/i, '\1s')
+  inflect.singular(/([^Ãª])s$/i, '\1')
+  inflect.singular(/^(Ã¡|gÃ¡|paÃ­)s$/i, '\1s')
   inflect.singular(/(r|z)es$/i, '\1')
   inflect.singular(/([^p])ais$/i, '\1al')
   inflect.singular(/eis$/i, 'el')
@@ -44,18 +44,18 @@ ActiveSupport::Inflector.inflections do |inflect|
   inflect.singular(/ns$/i, 'm')
   inflect.singular(/sses$/i, 'sse')
   inflect.singular(/^(.*[^s]s)es$/i, '\1')
-  inflect.singular(/ães$/i, 'ão')
+  inflect.singular(/Ã£es$/i, 'Ã£o')
   inflect.singular(/aes$/i, 'ao')
-  inflect.singular(/ãos$/i, 'ão')    
+  inflect.singular(/Ã£os$/i, 'Ã£o')    
   inflect.singular(/aos$/i, 'ao')
-  inflect.singular(/ões$/i, 'ão')
+  inflect.singular(/Ãµes$/i, 'Ã£o')
   inflect.singular(/oes$/i, 'ao')
-  inflect.singular(/(japon|escoc|ingl|dinamarqu|fregu|portugu)eses$/i, '\1ês')
-  inflect.singular(/^(g|)ases$/i,  '\1ás')
+  inflect.singular(/(japon|escoc|ingl|dinamarqu|fregu|portugu)eses$/i, '\1Ãªs')
+  inflect.singular(/^(g|)ases$/i,  '\1Ã¡s')
 
-  # Incontáveis
-  inflect.uncountable %w( tórax tênis ônibus lápis fênix )
+  # IncontÃ¡veis
+  inflect.uncountable %w( tÃ³rax tÃªnis Ã´nibus lÃ¡pis fÃªnix )
 
   # Irregulares
-  inflect.irregular "país", "países"
+  inflect.irregular "paÃ­s", "paÃ­ses"
 end
