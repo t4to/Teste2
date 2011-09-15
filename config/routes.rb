@@ -1,5 +1,13 @@
 Teste2::Application.routes.draw do
 
+  get "home/lista_categoria"
+
+  get "home/lista_perfil"
+
+  get "home/lista_area"
+
+  get "home/index"
+
 	resources :perfis
 
 	resources :categorias
