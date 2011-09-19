@@ -1,2 +1,8 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div data-role="header">
+	<h1><%= @evento.nome %></h1>
+</div><!-- /header -->
+
+<div data-role="content">	
+	<p>Criada em 1997, na Espanha, a Campus Party é simplesmente o maior acontecimento tecnológico do mundo nas áreas de inovação, ciência, cultura e entretenimento digital, reunindo milhares de pessoas para debater os principais temas em cada um destes universos.</p>
+	<%= link_to "Áreas", areas_mobile_path(@evento.id), "data-role" => "button", "data-theme" => "d"%>
+</div><!-- /content -->

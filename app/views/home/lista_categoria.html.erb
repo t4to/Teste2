@@ -1,2 +1,14 @@
-<h1>Home#lista_categoria</h1>
-<p>Find me in app/views/home/lista_categoria.html.erb</p>
+<div data-role="header">
+	<h1><%= @area.nome%></h1>
+</div><!-- /header -->
+
+<div data-role="content">
+	<ul data-role="listview">
+		<% @categorias.each do |categ| %>
+			<li>
+				<%= link_to categ.nome, perfis_mobile_path(categ.id) %>
+			</li>
+		<% end %>
+	</ul>
+
+</div><!-- /content -->

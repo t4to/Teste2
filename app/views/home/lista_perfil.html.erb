@@ -1,2 +1,14 @@
-<h1>Home#lista_perfil</h1>
-<p>Find me in app/views/home/lista_perfil.html.erb</p>
+<div data-role="header">
+	<h1><%= @categoria.nome%></h1>
+</div><!-- /header -->
+
+<div data-role="content">
+	<ul data-role="listview">
+		<% @perfis.each do |perfil| %>
+			<li>
+				<%= link_to perfil.nome, twitter_mobile_path(perfil.id) %>
+			</li>
+		<% end %>
+	</ul>
+
+</div><!-- /content -->

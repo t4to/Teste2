@@ -1,0 +1,28 @@
+<div data-role="header" data-position="inline">
+	<%= link_to "Voltar", "#", "data-rel" => "back", "data-direction" => "reverse", "data-icon" => "arrow-l" %>
+	<h1>
+		@<%= @screen_name %>
+	</h1>
+	
+	<%= link_to "Atualizar", "#", "data-icon" => "refresh", "class" => "ui-btn-right"%>
+</div>
+
+<div data-role="content">
+	<div>
+		<ul data-role="listview" id="lojadetalhe" data-theme="d" data-inset="true">
+			<li>
+				<img alt="<%= @screen_name %>" src="<%= @imagem_perfil %>">
+			</li>
+		</ul>
+	</div>
+
+	<ul data-role="listview" id="lojaposts" data-theme="d" data-inset="true">
+		<% @resultados.each_with_index do |resultado, index| %>
+			<li>
+				
+					<%= index + 1%> - <%= resultado.text%>
+				
+			</li>	
+		<% end %>
+	</ul>
+</div><!-- /content -->

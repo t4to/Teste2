@@ -1,13 +1,10 @@
 Teste2::Application.routes.draw do
 
-  get "home/lista_categoria"
-
-  get "home/lista_perfil"
-
-  get "home/lista_area"
-
-  get "home/index"
-
+	match ':evento_id/areas' => 'home#lista_area', :as => 'areas_mobile'
+	match ':area_id/categorias' => 'home#lista_categoria', :as => 'categorias_mobile'
+	match ':categoria_id/perfis' => 'home#lista_perfil', :as => 'perfis_mobile'
+	match ':perfil_id/posts' => 'home#twitter', :as => 'twitter_mobile'
+	
 	resources :perfis
 
 	resources :categorias
