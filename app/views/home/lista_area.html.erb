@@ -1,9 +1,10 @@
-<div data-role="header">
+<div data-role="header"  data-theme="b" data-position="inline">
+	<%= link_to "Voltar", "#", "data-rel" => "back", "data-direction" => "reverse", "data-icon" => "arrow-l" %>
 	<h1>Áreas</h1>
 </div><!-- /header -->
 
 <div data-role="content">
-	<ul data-role="listview">
+	<ul data-role="listview" data-theme="d">
 		<% @areas.each do |area| %>
 			<li>
 				<%= link_to area.nome, categorias_mobile_path(area.id) %>
